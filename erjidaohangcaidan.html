@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        a{
+            text-decoration: none;
+            width: 50px;
+            height: 20px;
+        }
+        li{
+            list-style: none;
+            width: 80px;
+            float: left;
+            border: 1px solid;
+        }
+        a{
+            display:block;
+            text-decoration: none;
+            color: #f1dbe4;
+            height: 41px;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{
+            border:1px black dashed;
+            width: 150px;
+            float: left;
+            text-align: center;
+            line-height: 27px;
+        }
+        a:hover{
+            color: cornflowerblue;
+            background-color: black;
+        }
+        ul li ul{
+            display: none;
+        }
+        ul li:hover ul, ul li a:hover ul{
+            display: block;
+            width: 150px;
+            height: 24px;
+        }
+        ul li ul li{
+            background-color: #96a4a7;
+
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li id="list">
+        <a href="#" id="f"> 四川</a>
+        <ul id="un">
+            <li><a href="#">成都</a>
+            <li><a href="#">眉山</a>
+            <li><a href="#">自贡</a>
+        </ul>
+
+</ul>
+
+<script>
+    var li=document.getElementById("list")
+    var open=document.getElementById("un")
+
+    li.onmouseover=function(){
+        un.style.display = "block";
+
+    }
+    li.onmouseout=function(){
+        un.style.display="none";
+    }
+</script>
+</body>
+<html>
